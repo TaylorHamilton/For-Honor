@@ -1,3 +1,5 @@
+<!--this is a 3rd page for player info. It is only here to show more info/data. The search bar is still there
+but it is smaller to make more room for the list-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,6 +26,8 @@
                 <a class="nav-link" href="maps.html">Maps</a>
                 <a class="nav-link" href="playerinfo.html">Player Info</a>
             </div></div>
+            <!-- The searchbar had to go into the navbar so that it would make the list look longer, and we had to shrink
+            down the searchbar so that it would fit and not ruin the navbar -->
             <div class="input-group input-group-sm mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text" id="inputGroup-sizing-sm">Name</span>
@@ -38,6 +42,7 @@
 </div>
   </div>
       </div>
+      <!-- each row will contain player data. They are in dark, while the wards are light-->
     <table class="table table-hover table-dark">
         <thead>
           <tr>
@@ -170,10 +175,22 @@
           </tr>
         </tbody>
       </table>
+      <!--these are the buttons to change pages to see more of the list. To travel back to the 1st page,
+    just like 1 and you will be taken back to the first page-->
       <div class="mx-auto" style="width: 200px;">
       <a href="playerinfo.html"><button type="button" class="btn btn-secondary">1</button></a>
       <a href="playerinfo2.html"><button type="button" class="btn btn-secondary">2</button></a>
         <a href="playerinfo3.html"><button type="button" class="btn btn-secondary">3</button></a>
     </div>
+    <!-- Script that links with the bootstrap java library -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+  crossorigin="anonymous"></script>
 </body>
 </html>
