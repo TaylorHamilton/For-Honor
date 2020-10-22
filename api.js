@@ -5,7 +5,6 @@ xhr.withCredentials = true;
 xhr.addEventListener("readystatechange", function () {
     if (this.readyState === this.DONE) {
         console.log(this.responseText);
-        sendHttpRequest('GET', "https://rapidapi.p.rapidapi.com/leaderboard/1/battle");
     }
 });
 
@@ -20,9 +19,18 @@ const sendHttpRequest = (method, url) => {
             console.log(data);
 
             document.getElementById('leaderboard').src = data.sprites.front_default;
+<<<<<<< HEAD
             document.getElementById('Player').innerHTML = data.entries[x].username;
             document.getElementById('Kills').innerHTML = data.number[0];
             document.getElementById('Wins').innerHTML = data.number[0];
+=======
+            var str = "" + data.id;
+            var pad = "000";
+            var ans = pad.substring( data.length - str.length) + str;
+            document.getElementById('Player').value = "#" + ans + " " + data.name;
+            document.getElementById('Kills').value = data.number[0];
+            document.getElementById('Wins').value = data.number[0];
+>>>>>>> master
         }
     })
 };
