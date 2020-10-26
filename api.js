@@ -1,4 +1,4 @@
-const data = document.getElementById('player');
+const data = document.getElementById("");
 
 const xhr = new XMLHttpRequest();
 xhr.withCredentials = true;
@@ -24,7 +24,7 @@ const sendHttpRequest = (method, url) => {
             console.log(data);
 
             document.getElementById('leaderboard').src = data.sprites.front_default;
-            var str = "" + data.id;
+            var str = " " + data.id;
             var pad = "000";
             var ans = pad.substring( data.length - str.length) + str;
             document.getElementById('Player').value = "#" + ans + " " + data.name;
