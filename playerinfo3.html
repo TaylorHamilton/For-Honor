@@ -1,5 +1,3 @@
-<!--this is a 3rd page for player info. It is only here to show more info/data. The search bar is still there
-but it is smaller to make more room for the list-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,19 +5,21 @@ but it is smaller to make more room for the list-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlayerInfo</title>
+    <!-- css link the bootstrap library-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 
 <body class="bg-dark">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#playerinfo3">For Honor</a>
+        <a class="navbar-brand" href="#playerinfo">For Honor</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
+                <!-- This is the navbar, which gives access to all the pages. It is in dark mode -->
                 <a class="nav-link" href="index.html">Factions <span class="sr-only">(current)</span></a>
                 <a class="nav-link" href="knights.html">Knights</a>
                 <a class="nav-link" href="vikings.html">Vikings</a>
@@ -29,26 +29,22 @@ but it is smaller to make more room for the list-->
                 <a class="nav-link active" href="playerinfo.html">Player Info</a>
             </div>
         </div>
-        <!-- The searchbar had to go into the navbar so that it would make the list look longer, and we had to shrink
-            down the searchbar so that it would fit and not ruin the navbar -->
-        <div class="input-group input-group-sm mb-3">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Name</span>
-            </div>
-            <input type="text" class="form-control" aria-label="Sizing example input"
-                aria-describedby="inputGroup-sizing-sm">
-            <button type="button" class="btn btn-secondary btn-sm">Enter</button>
-        </div>
-        </div>
-        </div>
-        </div>
     </nav>
+    <!-- Had to have the search bar close to the navbar(in other playerinfo html's there are in the navbar) so that they 
+    wouldnt ruin the table -->
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">@</span>
+        </div>
+        <input type="text" id="search" class="form-control" placeholder="Battle/psn/xbl/steam" aria-label="Username"
+            aria-describedby="basic-addon1">
+        <div class="input-group-append">
+            <button id="btn" class="btn btn-outline-secondary" type="button">ENTER</button>
+        </div>
     </div>
-    </div>
-    </div>
-    <!-- each row will contain player data. They are in dark, while the wards are light-->
     <table class="table table-hover table-dark">
         <thead>
+            <!-- Rows that will show player info -->
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Gamertag</th>
@@ -57,70 +53,129 @@ but it is smaller to make more room for the list-->
             </tr>
         </thead>
         <tbody>
-            <tr>
+            <tr class="javascript ">
                 <th scope="row">41</th>
                 <td><p id="Player"></p></td>
                 <td><p id="Kills"></p></td>
                 <td><p id="Wins"></p></td>
             </tr>
-            <tr>
+            <tr class="javascript ">
                 <th scope="row">42</th>
                 <td><p id="Player"></p></td>
                 <td><p id="Kills"></p></td>
                 <td><p id="Wins"></p></td>
             </tr>
-            <tr>
+            <tr class="javascript ">
                 <th scope="row">43</th>
                 <td><p id="Player"></p></td>
                 <td><p id="Kills"></p></td>
                 <td><p id="Wins"></p></td>
             </tr>
-            <tr>
+            <tr class="javascript ">
                 <th scope="row">44</th>
                 <td><p id="Player"></p></td>
                 <td><p id="Kills"></p></td>
                 <td><p id="Wins"></p></td>
             </tr>
-            <tr>
+            <tr class="javascript ">
                 <th scope="row">45</th>
                 <td><p id="Player"></p></td>
                 <td><p id="Kills"></p></td>
                 <td><p id="Wins"></p></td>
             </tr>
-            <tr>
+            <tr class="javascript ">
                 <th scope="row">46</th>
                 <td><p id="Player"></p></td>
                 <td><p id="Kills"></p></td>
                 <td><p id="Wins"></p></td>
             </tr>
-            <tr>
+            <tr class="javascript">
                 <th scope="row">47</th>
                 <td><p id="Player"></p></td>
                 <td><p id="Kills"></p></td>
                 <td><p id="Wins"></p></td>
             </tr>
-            <tr>
+            <tr class="javascript">
                 <th scope="row">48</th>
                 <td><p id="Player"></p></td>
                 <td><p id="Kills"></p></td>
                 <td><p id="Wins"></p></td>
             </tr>
-            <tr>
+            <tr class="javascript ">
                 <th scope="row">49</th>
                 <td><p id="Player"></p></td>
                 <td><p id="Kills"></p></td>
                 <td><p id="Wins"></p></td>
             </tr>
-            <tr>
+            <tr class="javascript ">
                 <th scope="row">50</th>
+                <td><p id="Player"></p></td>
+                <td><p id="Kills"></p></td>
+                <td><p id="Wins"></p></td>
+            </tr>
+            <tr class="javascript ">
+                <th scope="row">51</th>
+                <td><p id="Player"></p></td>
+                <td><p id="Kills"></p></td>
+                <td><p id="Wins"></p></td>
+            </tr>
+            <tr class="javascript ">
+                <th scope="row">52</th>
+                <td><p id="Player"></p></td>
+                <td><p id="Kills"></p></td>
+                <td><p id="Wins"></p></td>
+            </tr>
+            <tr class="javascript ">
+                <th scope="row">53</th>
+                <td><p id="Player"></p></td>
+                <td><p id="Kills"></p></td>
+                <td><p id="Wins"></p></td>
+            </tr>
+            <tr class="javascript ">
+                <th scope="row">54</th>
+                <td><p id="Player"></p></td>
+                <td><p id="Kills"></p></td>
+                <td><p id="Wins"></p></td>
+            </tr>
+            <tr class="javascript ">
+                <th scope="row">55</th>
+                <td><p id="Player"></p></td>
+                <td><p id="Kills"></p></td>
+                <td><p id="Wins"></p></td>
+            </tr>
+            <tr class="javascript ">
+                <th scope="row">56</th>
+                <td><p id="Player"></p></td>
+                <td><p id="Kills"></p></td>
+                <td><p id="Wins"></p></td>
+            </tr>
+            <tr class="javascript ">
+                <th scope="row">57</th>
+                <td><p id="Player"></p></td>
+                <td><p id="Kills"></p></td>
+                <td><p id="Wins"></p></td>
+            </tr>
+            <tr class="javascript ">
+                <th scope="row">58</th>
+                <td><p id="Player"></p></td>
+                <td><p id="Kills"></p></td>
+                <td><p id="Wins"></p></td>
+            </tr>
+            <tr class="javascript ">
+                <th scope="row">59</th>
+                <td><p id="Player"></p></td>
+                <td><p id="Kills"></p></td>
+                <td><p id="Wins"></p></td>
+            </tr>
+            <tr class="javascript ">
+                <th scope="row">60</th>
                 <td><p id="Player"></p></td>
                 <td><p id="Kills"></p></td>
                 <td><p id="Wins"></p></td>
             </tr>
         </tbody>
     </table>
-    <!--these are the buttons to change pages to see more of the list. To travel back to the 1st page,
-    just like 1 and you will be taken back to the first page-->
+    <!-- Buttons for other pages that show the rest of the list -->
     <div class="mx-auto" style="width: 200px;">
         <a href="playerinfo.html"><button type="button" class="btn btn-secondary">1</button></a>
         <a href="playerinfo2.html"><button type="button" class="btn btn-secondary">2</button></a>
@@ -137,7 +192,7 @@ but it is smaller to make more room for the list-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-        <script src="api.js"></script>
+        <script src="api3.js"></script>
 </body>
 
 </html>

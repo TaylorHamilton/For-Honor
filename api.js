@@ -1,6 +1,7 @@
 const getBtn = document.querySelector('.btn');
 const player = document.getElementById("Player");
-const tr = document.querySelector('tr')
+const parent = document.querySelectorAll('.javascript');
+console.log(parent);
 const getData = () => {
 	var answer = document.getElementById('search').value;
 	console.log(answer);
@@ -17,12 +18,11 @@ const sendHttpRequest = (method, url) => {
 		xhr.onload = () => {
 			const data = JSON.parse(xhr.response);
 			console.log(data);
-			for (var y = 0; y < tr.length; y++) {
-				for (var x = 0; x < data.entries.length; x++) {
-					player.textContent = data.entries[x].username;
-					document.getElementById('Kills').innerHTML = data.entries[x].values.kills;
-					document.getElementById('Wins').innerHTML = data.entries[x].values.wins;
-				}
+			for (var x = 0; x < parent.length; x++) {
+				parent[x].children[1].textContent = data.entries[x].username;
+				parent[x].children[2].textContent = data.entries[x].values.kills;
+				parent[x].children[3].textContent = data.entries[x].values.wins;
+				console.log(data.entries[x].username)
 			}
 		}
 		xhr.setRequestHeader("x-rapidapi-host", "call-of-duty-modern-warfare.p.rapidapi.com");
